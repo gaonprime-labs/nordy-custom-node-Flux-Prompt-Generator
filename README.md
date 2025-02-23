@@ -9,36 +9,36 @@ based on the work by [Aitrepreneur](https://huggingface.co/Aitrepreneur) found h
 
 The **Flux Prompt Generator** utilizes a collection of JSON data files containing various categories of descriptive terms. These categories include:
 
-- **Artform:** Photography, Digital Art, etc.
-- **Photo Type:** Portrait, Landscape, etc.
-- **Body Types:** Muscular, Thin, etc.
-- **Default Tags:** Man, Woman, Child, etc.
-- **Roles:** Knight, Wizard, etc.
-- **Hairstyles:** Long, Short, Braided, etc.
+- **Accessories:** Glasses, Hats, Jewelry, etc.
 - **Additional Details:** Clothing, Accessories, etc.
-- **Photography Styles:** Cinematic, Realistic, etc.
-- **Device:** Camera models, etc.
-- **Photographer:** Famous photographers, etc.
+- **Age Group:** Child, Teenager, Adult, etc.
+- **Artform:** Photography, Digital Art, etc.
 - **Artist:** Famous artists, etc.
-- **Digital Artform:** Pixel Art, 3D Render, etc.
-- **Place:** Forest, City, etc.
-- **Lighting:** Soft, Harsh, etc.
+- **Background:** Plain, Detailed, etc.
+- **Body Markings:** Birthmarks, Moles, Freckles, etc.
+- **Body Types:** Muscular, Thin, etc.
 - **Clothing:** Dress, Suit, etc.
 - **Composition:** Rule of Thirds, Golden Ratio, etc.
-- **Pose:** Standing, Sitting, etc.
-- **Background:** Plain, Detailed, etc.
-- **Face Features:** Sharp Jawline, High Cheekbones, etc.
-- **Eye Colors:** Blue, Green, Brown, etc.
-- **Facial Hair:** Beard, Mustache, etc.
-- **Skin Tone:** Pale, Dark, etc.
-- **Age Group:** Child, Teenager, Adult, etc.
+- **Default Tags:** Man, Woman, Child, etc.
+- **Device:** Camera models, etc.
+- **Digital Artform:** Pixel Art, 3D Render, etc.
 - **Ethnicity:** Various ethnicities and cultural backgrounds.
-- **Accessories:** Glasses, Hats, Jewelry, etc.
 - **Expression:** Smile, Frown, Surprise, etc.
-- **Tattoos & Scars:** Detailed descriptions of body modifications.
-- **Makeup Styles:** Natural, Glamorous, etc.
+- **Eye Colors:** Blue, Green, Brown, etc.
+- **Face Features:** Sharp Jawline, High Cheekbones, etc.
+- **Facial Hair:** Beard, Mustache, etc.
 - **Hair Color:** Blonde, Brown, Black, etc.
-- **Body Markings:** Birthmarks, Moles, Freckles, etc.
+- **Hairstyles:** Long, Short, Braided, etc.
+- **Lighting:** Soft, Harsh, etc.
+- **Makeup Styles:** Natural, Glamorous, etc.
+- **Photo Type:** Portrait, Landscape, etc.
+- **Photographer:** Famous photographers, etc.
+- **Photography Styles:** Cinematic, Realistic, etc.
+- **Place:** Forest, City, etc.
+- **Pose:** Standing, Sitting, etc.
+- **Roles:** Knight, Wizard, etc.
+- **Skin Tone:** Pale, Dark, etc.
+- **Tattoos & Scars:** Detailed descriptions of body modifications.
 
 ![Flux Prompt Generator](https://i.imgur.com/0TNizfp.png "Displaying node")
 
@@ -48,6 +48,7 @@ The node allows you to select specific terms or choose "random" to let the gener
 
 1. **cd** to the custom_nodes folder inside of **ComfyUI** directory
 2. **cmd** in the address bar, then use this command:
+
 ```
 git clone https://github.com/fairy-root/Flux-Prompt-Generator.git
 ```
@@ -56,11 +57,12 @@ git clone https://github.com/fairy-root/Flux-Prompt-Generator.git
 
 1. **Add the "Flux Prompt Generator" node to your ComfyUI workflow.**
 2. **Configure the desired parameters:**
-    - **Seed:** Controls the randomness of the generator.
-    - **Custom:** Add any custom text to the prompt.
-    - **Subject:** Specify the main subject of the image.
-    - **Artform:** Choose the desired art form (Photography, Digital Art, etc.).
-    - **... (All other parameters as described in the Overview section)**
+
+   - **Seed:** Controls the randomness of the generator.
+   - **Custom:** Add any custom text to the prompt.
+   - **Subject:** Specify the main subject of the image.
+   - **Artform:** Choose the desired art form (Photography, Digital Art, etc.).
+   - **... (All other parameters as described in the Overview section)**
 
 3. **Connect the output of the node to a text-to-image model (like Flux or Stable Diffusion...etc) to generate images based on the generated prompt.**
 
