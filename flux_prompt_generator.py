@@ -612,7 +612,7 @@ class FluxPromptGenerator:
         return (prompt, seed, t5xxl_output, clip_l_output, clip_g_output)
 
     @classmethod
-    def IS_CHANGED(cls, *args):
+    def IS_CHANGED(cls, *args, **kwargs):
         return True
 
 
